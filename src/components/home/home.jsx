@@ -16,14 +16,17 @@ export default class Home extends React.Component{
         <div className="container">
           <div className="row">
             <div className="col-md-4">
+              <img src={'http://via.placeholder.com/250x150'} className="thumbnail"/>
               <h3>Cadastre-se</h3>
               <p>blah blah</p>
             </div>
             <div className="col-md-4">
+              <img src={'http://via.placeholder.com/250x150'} className="thumbnail"/>
               <h3>Encontre companhias interessantes</h3>
               <p>blah</p>
             </div>
             <div className="col-md-4">
+              <img src={'http://via.placeholder.com/250x150'} className="thumbnail"/>
               <h3>Get hired</h3>
               <p>blah again</p>
             </div>
