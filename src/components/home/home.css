@@ -1,0 +1,10 @@
+.jumbotron {
+  background: url("../../assets/images/business.jpg") no-repeat center center;
+  background-size: cover;
+  height: 25rem; 
+}
+
+.container{
+  margin-top: 3.5rem;
+}
+

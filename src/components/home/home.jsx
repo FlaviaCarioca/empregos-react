@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import './home.css';
 
 export default class Home extends React.Component{
   render(){
@@ -11,7 +11,7 @@ export default class Home extends React.Component{
             <p>Salarios de R$1,000 ate R$20,000 por mes.</p>
             <p><a className="btn btn-primary btn-lg"  role="button">Cadastre-se &raquo;</a></p>
           </div>
-        </div >
+        </div>
 
         <div className="container">
           <div className="row">
