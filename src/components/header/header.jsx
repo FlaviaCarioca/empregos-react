@@ -1,5 +1,5 @@
 import React from 'react';
-import Login from '../../components/login/login';
+import LoginContainer from '../../components/login/loginContainer';
 
 export default class Header extends React.Component {
   render(){
@@ -20,7 +20,7 @@ export default class Header extends React.Component {
               <a className="nav-link" href="#">About</a>
             </li>
           </ul>
-          <Login/>
+          <LoginContainer />
         </div>
       </nav>
     )
