@@ -25,7 +25,9 @@ export default class LoginContainer extends React.Component{
 
   handleLogin(e) {
     e.preventDefault();
-    let full_url = BASE_URL + 'v1/auth/'; 
+   
+    let full_url = BASE_URL + 'v1/auth/';
+    
     axios.post(full_url, { auth: this.state }, { headers: {} })
     .then(res => {
       sessionStorage.setItem('token', res.data.auth_token);
@@ -46,3 +48,4 @@ export default class LoginContainer extends React.Component{
     );    
   }
 }
+
