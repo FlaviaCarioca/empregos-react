@@ -11,19 +11,15 @@ export default class LoginContainer extends React.Component{
         password: '',
         errorMessage: ''
     }
-
-    //binding
-    this.handleChange = this.handleChange.bind(this);
-    this.handleLogin = this.handleLogin.bind(this);
   }
 
-  handleChange(e){
+  _handleChange(e){
     this.setState({
       [e.target.id]: e.target.value
     });
   }
 
-  handleLogin(e) {
+  _handleLogin(e) {
     e.preventDefault();
    
     let full_url = BASE_URL + 'v1/auth/';
@@ -42,7 +38,7 @@ export default class LoginContainer extends React.Component{
 
   render(){
     return(
-      <Login handleChange={this.handleChange} handleLogin={this.handleLogin} 
+      <Login handleChange={this._handleChange.bind(this)} handleLogin={this._handleLogin.bind(this)} 
       username={this.state.username} password={this.state.password} 
       errorMessage={this.state.errorMessage} />
     );    
